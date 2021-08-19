@@ -5,9 +5,12 @@
  */
 package sistemaVendas.controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
@@ -36,6 +39,12 @@ public class FXMLVBoxMainController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
+
+    @FXML
+    private void handleMenuItemInscricaoClientes(ActionEvent event) throws IOException {
+        AnchorPane pane = FXMLLoader.load(getClass().getResource("/sistemaVendas/view/FXMLInscricaoClientes.fxml"));
+        anchorPaneBody.getChildren().setAll(pane);
+    }
     
 }
