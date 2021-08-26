@@ -36,10 +36,10 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Label>
-                  <GridPane layoutX="93.0" layoutY="78.0">
+                  <GridPane layoutX="22.0" layoutY="78.0" prefHeight="120.0" prefWidth="310.0">
                     <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="88.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="222.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -52,17 +52,17 @@
                         <Label text="Nome" GridPane.rowIndex="1" />
                         <Label text="NIF" GridPane.rowIndex="2" />
                         <Label text="Telefone" GridPane.rowIndex="3" />
-                        <Label fx:id="labelClienteCodigo" text="Label" GridPane.columnIndex="1" />
-                        <Label fx:id="labelClienteNome" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="labelClienteNif" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="labelClienteTelefone" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="labelClienteCodigo" GridPane.columnIndex="1" />
+                        <Label fx:id="labelClienteNome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="labelClienteNif" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="labelClienteTelefone" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                      </children>
                   </GridPane>
                   <Group layoutX="92.0" layoutY="270.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
                      <children>
-                        <Button fx:id="btnInserir" mnemonicParsing="false" prefHeight="31.0" prefWidth="79.0" text="Inserir" />
-                        <Button fx:id="btnAlterar" layoutX="90.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="79.0" text="Alterar" />
-                        <Button fx:id="btnRemover" layoutX="180.0" mnemonicParsing="false" text="Remover" />
+                        <Button fx:id="btnInserir" mnemonicParsing="false" onAction="#handleButtonInserir" prefHeight="31.0" prefWidth="79.0" text="Inserir" />
+                        <Button fx:id="btnAlterar" layoutX="90.0" mnemonicParsing="false" onAction="#handleButtonAlterar" prefHeight="31.0" prefWidth="79.0" text="Alterar" />
+                        <Button fx:id="btnRemover" layoutX="180.0" mnemonicParsing="false" onAction="#handleButtonRemover" text="Remover" />
                      </children>
                   </Group>
                </children>
